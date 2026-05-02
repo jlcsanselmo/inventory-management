@@ -1,0 +1,15 @@
+# Dependências
+node_modules/
+.venv/
+
+# Variáveis de ambiente
+.env
+
+# Pastas de build/compilação do TypeScript
+dist/
+build/
+/generated/prisma
+
+# Logs
+*.log
+npm-debug.log*
