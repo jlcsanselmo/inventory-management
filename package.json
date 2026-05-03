@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/jlcsanselmo/inventory-management#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
     "prisma": "^7.8.0",
     "tsx": "^4.21.0",
@@ -28,6 +30,8 @@
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@types/pg": "^8.20.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "pg": "^8.20.0"
   }
 }
