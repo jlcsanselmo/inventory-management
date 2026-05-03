@@ -1,6 +1,7 @@
 version: "3.9"
 
 services:
+  # Banco de Dados
   db:
     image: postgres:16
     container_name: postgres_inventory
@@ -13,6 +14,26 @@ services:
       - "5444:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  # Backend (API)
+  api:
+    build: ./backend 
+    container_name: inventory_backend
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: "postgresql://postgres:admin123@db:5432/mydatabase?schema=public"
+    depends_on:
+      - db
+
+  # Frontend (Web)
+  web:
+    build: ./frontend 
+    container_name: inventory_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
 
 volumes:
   postgres_data:
