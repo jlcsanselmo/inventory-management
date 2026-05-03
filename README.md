@@ -1,7 +1,8 @@
 # Sistema de Gestão de Inventário (Fullstack)
+<img width="1913" height="951" alt="image" src="https://github.com/user-attachments/assets/d00644cc-71c8-4bc2-ac58-e62bb2a01dfe" />
 
 ## Objetivo
-Aplicação Fullstack para gerenciamento de produtos com operações de CRUD completo, desenvolvida como parte de um desafio técnico.
+Aplicação Fullstack para gerenciamento de produtos com operações de CRUD completo.
 
 ## Tecnologias Utilizadas
 - **Backend:** Node.js, TypeScript, Express, PostgreSQL.
